@@ -11,13 +11,13 @@ function AS:Ludwig()
 		AS:SkinFrame(LudwigFrame)
 		LudwigFrame:SetHeight(456)
 		LudwigFrame:SetWidth(360)
-		AS:SkinCloseButton(LudwigFrameCloseButton, true)
-
 		LudwigFrame:SetMovable(true)
 		LudwigFrame:EnableMouse(true)
 		LudwigFrame:RegisterForDrag('LeftButton')
 		LudwigFrame:SetScript('OnDragStart', LudwigFrame.StartMoving)
 		LudwigFrame:SetScript('OnDragStop', LudwigFrame.StopMovingOrSizing)
+
+		AS:SkinCloseButton(LudwigFrameCloseButton, true)
 		
 		-- Search box
 		AS:SkinEditBox(LudwigFramesearch)
